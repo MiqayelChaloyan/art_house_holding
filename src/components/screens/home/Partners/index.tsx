@@ -32,8 +32,8 @@ const Partners: FC<Props> = ({ data }) => {
     const size = useWindowSize();
 
     const items = data.co_workers.map((item: any) =>
-        <SwiperSlide>
-            <Partner key={item.slug} item={item} />
+        <SwiperSlide key={item.slug}>
+            <Partner item={item} />
         </SwiperSlide>
     );
 
