@@ -2,12 +2,12 @@ import { FC, PropsWithChildren } from 'react';
 
 import { DefaultSeo } from 'next-seo';
 
-const seoTitle = 'ART Training Center';
-const seoDescription = 'Through immersive classes, ART teaches you the skills you need in your future career as a successful and competitive professional.';
-const seoUrl = 'https://art-training-center.vercel.app/en';
-const seoOGImage = 'https://images.squarespace-cdn.com/content/v1/63ed0c8e54d11151a02d1803/52c3f2b6-fbf3-469b-880f-bb3181827cc0/Training%2BCenter%2BConference%2BRoom%2BMockup.jpg';
-const seoOGImageAlt = 'ART Training Center';
-const seoSiteName = 'ART Training Center';
+const seoTitle = 'ART House Holding';
+const seoDescription = `Welcome to Art House, your premier destination for transformative learning experiences! At Art House, we pride ourselves on being a dynamic training center that offers a diverse array of courses to ignite your passion and elevate your skills. Our curated curriculum spans a wide spectrum of artistic disciplines, ensuring there's something for everyone seeking to explore and master the realms of creativity.`;
+const seoUrl = 'https://art-house-holding.vercel.app/en';
+const seoOGImage = 'https://www.google.com/url?sa=i&url=https%3A%2F%2Farthouse.am%2F&psig=AOvVaw3n6R7tQ7ZWi9fGrELo3xXY&ust=1704893199096000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMCeosa00IMDFQAAAAAdAAAAABAI';
+const seoOGImageAlt = 'ART House Holding';
+const seoSiteName = 'ART House Holding';
 const seoLocale = 'en';
 
 const Meta: FC<PropsWithChildren> = ({ children }) => {

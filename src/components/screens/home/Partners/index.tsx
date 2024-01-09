@@ -49,7 +49,7 @@ const Partners: FC<Props> = ({ data }) => {
                         clickable: true,
                     }}
                     modules={[FreeMode, Pagination]}
-                    className="mySwiper"
+                    className={styles.swiper}
                 >
                     {items}
                 </Swiper>

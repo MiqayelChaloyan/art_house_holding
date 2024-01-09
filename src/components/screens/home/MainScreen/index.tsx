@@ -5,6 +5,8 @@ import Container from '@/components/components//container/Container';
 
 import styles from './style.module.sass';
 
+
+import {LuckiestGuy} from '@/constants/font'
 const MainScreen = () => {
     const { t } = useTranslation();
 
