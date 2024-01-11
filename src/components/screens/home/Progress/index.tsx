@@ -1,19 +1,13 @@
 import { FC, memo } from 'react';
 
-// import { Inter } from 'next/font/google';
-
 import Container from '@/components/components//container/Container';
 import ProgressBar from '../../../ui/progressBar';
 
 import { HomeContent } from '../../../../../sanity/sanity-queries/home-queries';
 
-import styles from './style.module.sass';
+import ArianAMU from '@/constants/font';
 
-// const inter = Inter({
-//     subsets: ['latin'],
-//     variable: '--font-inter',
-//     display: 'swap',
-// });
+import styles from './style.module.sass';
 
 type Props = {
     data: HomeContent
@@ -26,7 +20,7 @@ const Progress: FC<Props> = ({ data }) => {
         return (
             <div key={item.slug} className={styles.column}>
                 <ProgressBar value={0} quantity={item.quantity} />
-                <p className={`${styles.title}`}>{item.title}</p>
+                <p className={`${styles.title} ${ArianAMU.className}`}>{item.title}</p>
             </div>
         );
     });

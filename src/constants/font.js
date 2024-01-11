@@ -1,7 +1,5 @@
-import { Luckiest_Guy } from 'next/font/google';
+import localFont from 'next/font/local';
 
-export const LuckiestGuy = Luckiest_Guy({
-    subsets: ['latin'],
-    variable: '--font-luckiest-guy',
-    weight: '400'
-});
+const ArianAMU = localFont({ src: '../../public/font/arnamu.ttf' });
+
+export default ArianAMU;
