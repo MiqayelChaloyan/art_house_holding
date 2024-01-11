@@ -16,10 +16,10 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 # ART House
 ### ART House website
-(https://art-training-center.vercel.app/en)
+(https://art-house-holding.vercel.app/en)
 
 ### ART Training Center admin 
-(https://art-training-center.vercel.app/admin/structure)
+(https://art-house-holding.vercel.app/admin)
 
 ## Figma 
 https://www.figma.com/file/hXF3N7SQvjauSeuUl80YPQ/Art-House-Holding?type=design&node-id=0-1&mode=design&t=11GGYjgXZZvALhwb-0
