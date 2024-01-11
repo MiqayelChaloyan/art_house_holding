@@ -24,17 +24,12 @@ type Props = {
     data: HomeContent
 };
 
-const sizes = {
-    margin: '0 auto',
-    width: '50%'
-}
-
 const Partners: FC<Props> = ({ data }) => {
     const { t } = useTranslation();
-    const size = useWindowSize();
+    const size = useWindowSize();    
 
     const items = data.co_workers.map((item: any) =>
-        <SwiperSlide key={item.slug}>
+        <SwiperSlide key={item._key}>
             <Partner item={item} />
         </SwiperSlide>
     );

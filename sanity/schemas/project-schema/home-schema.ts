@@ -133,17 +133,16 @@ const home_content = {
             description: 'Դուք կարող եք ավելացնել ցանկացած թվով նկարներ',
             of: [
                 {
-                    name: 'image',
+                    name: 'svg',
+                    title: 'Svg',
                     type: 'image',
-                    title: 'Image',
-                    options: {
-                        hotspot: true,
-                    },
+                    options: { hotspot: true },
                     fields: [
+
                         {
                             name: 'alt',
-                            type: 'string',
-                            title: 'Alternative text',
+                            title: 'Alt',
+                            type: 'string'
                         },
                         {
                             name: 'slug',
@@ -155,6 +154,7 @@ const home_content = {
                             validation: (Rule: any) => Rule.required(),
                         },
                     ],
+                    validation: (Rule: any) => Rule.required(),
                 },
             ],
             options: {

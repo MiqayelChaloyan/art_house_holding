@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 import { urlFor } from '../../../../sanity/sanity';
 
 import styles from './style.module.sass';
@@ -7,7 +5,7 @@ import styles from './style.module.sass';
 const Partner = ({ item }: any) => {
     const { alt } = item;
 
-    const urlForImage = urlFor(item)
+    const urlForSvg = urlFor(item)
         .auto('format')
         .fit('max')
         .url();
@@ -15,16 +13,7 @@ const Partner = ({ item }: any) => {
     return (
         <div className={styles.co_worker}>
             <div className={styles.logo}>
-                <Image
-                    src={urlForImage}
-                    alt={alt}
-                    priority
-                    className={styles.img}
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    style={{ objectFit: 'cover' }}
-                />
+                <img src={urlForSvg} alt={alt} className={styles.svg_icon} />
             </div>
         </div>
     );
