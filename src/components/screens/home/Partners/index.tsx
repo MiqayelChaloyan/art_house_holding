@@ -11,6 +11,8 @@ import useWindowSize from '@/hooks/useWindowSize';
 
 import { HomeContent } from '../../../../../sanity/sanity-queries/home-queries';
 
+import ArianAMU from '@/constants/font';
+
 // Swiper styles
 import 'swiper/css';
 import 'swiper/css/free-mode';
@@ -39,7 +41,7 @@ const Partners: FC<Props> = ({ data }) => {
 
     return (
         <div id="co-workers" className={styles.container}>
-            <h2 className={styles.title}>{t('section-titles.partners')}</h2>
+            <h2 className={`${styles.title} ${ArianAMU.className}`}>{t('section-titles.partners')}</h2>
             <div className={styles.desktop}>
                 <Swiper
                     slidesPerView={size.width <= 991 ? 4 : 9}

@@ -5,7 +5,7 @@ import { DefaultSeo } from 'next-seo';
 const seoTitle = 'ART House Holding';
 const seoDescription = `Welcome to Art House, your premier destination for transformative learning experiences! At Art House, we pride ourselves on being a dynamic training center that offers a diverse array of courses to ignite your passion and elevate your skills. Our curated curriculum spans a wide spectrum of artistic disciplines, ensuring there's something for everyone seeking to explore and master the realms of creativity.`;
 const seoUrl = 'https://art-house-holding.vercel.app/en';
-const seoOGImage = 'https://arthouse.am/wp-content/uploads/2022/05/2.png';
+const seoOGImage = 'https://mir-s3-cdn-cf.behance.net/projects/404/89da2f34070754.Y3JvcCw5NTgsNzQ5LDk3LDE4.jpg';
 const seoOGImageAlt = 'ART House Holding';
 const seoSiteName = 'ART House Holding';
 const seoLocale = 'en';

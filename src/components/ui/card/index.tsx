@@ -3,7 +3,10 @@ import Link from 'next/link';
 
 import { urlFor } from '../../../../sanity/sanity';
 
+import ArianAMU from '@/constants/font';
+
 import styles from './style.module.sass';
+
 
 const BranchWeb = ({ item }: any) => {
     const { web_site_title, web_site_url, website_logo } = item;
@@ -30,7 +33,7 @@ const BranchWeb = ({ item }: any) => {
                                 style={{ objectFit: 'cover' }}
                             />
                         </div>
-                        <p className={styles.title}>{web_site_title}</p>
+                        <p className={`${styles.title} ${ArianAMU.className}`} >{web_site_title}</p>
                     </div>
                 </div>
             </div>

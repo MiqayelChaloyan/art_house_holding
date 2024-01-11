@@ -11,6 +11,8 @@ import cn from 'classnames';
 
 import Logo from '@/components/icons/Logo';
 
+import ArianAMU from '@/constants/font';
+
 import styles from './Header.module.sass';
 
 type IHeaderProps = {
@@ -84,9 +86,9 @@ const Header = ({ typePosition }: IHeaderProps) => {
                     `${isOpenMenu ? styles.contentShow : ''}`,
                 )}>
                     <div className={styles.nav}>
-                        <Link href='#about' aria-label='about' className={`${styles.link} ${linkActive === 'about' ? styles.linkActive : ''}`} onClick={() => handleActiveLink('about')}>{t('navigation.about')}</Link>
-                        <Link href='#branches' aria-label='branches' className={`${styles.link} ${linkActive === 'branches' ? styles.linkActive : ''}`} onClick={() => handleActiveLink('branches')}>{t('navigation.branches')}</Link>
-                        <Link href='#co-workers' aria-label='co_workers' className={`${styles.link} ${linkActive === 'co-workers' ? styles.linkActive : ''}`} onClick={() => handleActiveLink('co-workers')}>{t('navigation.co-workers')}</Link>
+                        <Link href='#about' aria-label='about' className={`${styles.link} ${linkActive === 'about' ? styles.linkActive : ''} ${ArianAMU.className}`} onClick={() => handleActiveLink('about')}>{t('navigation.about')}</Link>
+                        <Link href='#branches' aria-label='branches' className={`${styles.link} ${linkActive === 'branches' ? styles.linkActive : ''} ${ArianAMU.className}`} onClick={() => handleActiveLink('branches')}>{t('navigation.branches')}</Link>
+                        <Link href='#co-workers' aria-label='co_workers' className={`${styles.link} ${linkActive === 'co-workers' ? styles.linkActive : ''} ${ArianAMU.className}`} onClick={() => handleActiveLink('co-workers')}>{t('navigation.co-workers')}</Link>
                     </div>
 
                     <div>
@@ -104,7 +106,7 @@ const Header = ({ typePosition }: IHeaderProps) => {
                                         setTimeout(() => dispatch(openModalLoading()), 2);
                                     }}
                                     style={{ color: activeLocale === locale ? 'black' : '#B21B1B' }}
-                                    className={`${styles.language}`}
+                                    className={`${styles.language} ${ArianAMU.className}`}
                                 >
                                     {localeStrings[locale]}
                                 </Link>

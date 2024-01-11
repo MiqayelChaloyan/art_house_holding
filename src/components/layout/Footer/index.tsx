@@ -9,9 +9,10 @@ import Facebook from '@/components/icons/Facebook';
 import Instagram from '@/components/icons/Instagram';
 import Gmail from '@/components/icons/Gmail';
 import Linkedin from '@/components/icons/Linkedin';
-import Twitter from '@/components/icons/Twitter';
 
 import { Hosts } from '@/constants/constants';
+
+import ArianAMU from '@/constants/font';
 
 import styles from './Footer.module.sass';
 
@@ -24,39 +25,36 @@ const Footer = () => {
             <div className={styles.footer}>
                 <div>
                     <Link href='#about-us' aria-label='About us' className={styles.icon}>
-                        <p className={`${styles.info_web}`}>{t('footer.about-us')}</p>
+                        <p className={`${styles.info_web} ${ArianAMU.className}`}>{t('footer.about-us')}</p>
                     </Link>
                     <Link href='#branches' aria-label='Branches' className={styles.icon}>
-                        <p className={`${styles.info_web}`}>{t('footer.branches')}</p>
+                        <p className={`${styles.info_web} ${ArianAMU.className}`}>{t('footer.branches')}</p>
                     </Link>
                     <Link href='#' aria-label='Programs' className={styles.icon}>
-                        <p className={`${styles.info_web}`}>{t('footer.programs')}</p>
+                        <p className={`${styles.info_web} ${ArianAMU.className}`}>{t('footer.programs')}</p>
                     </Link>
                     <Link href='#co-workers' aria-label='Co-workers' className={styles.icon}>
-                        <p className={`${styles.info_web}`}> {t('footer.partners')}</p>
+                        <p className={`${styles.info_web} ${ArianAMU.className}`}> {t('footer.partners')}</p>
                     </Link>
                 </div>
                 <div>
-                    <h2 className={styles.addres}>{t('adress.street')}</h2>
+                    <h2 className={`${styles.addres} ${ArianAMU.className}`}>{t('adress.street')}</h2>
                     <div className={styles.phone_numbers}>
                         <Link href='tel:+37477543455' aria-label='+374 (77) 54 34 55' className={styles.icon}>
-                            <p className={`${styles.info_web}`}>+374 (77) 54 34 55, </p>
+                            <p className={`${styles.info_web} ${ArianAMU.className}`}>+374 (77) 54 34 55, </p>
                         </Link>
                         <Link href='tel:+37433543455' aria-label='+374 (33) 54 34 55' className={styles.icon}>
-                            <p className={`${styles.info_web}`}>+374 (33) 54 34 55, </p>
+                            <p className={`${styles.info_web} ${ArianAMU.className}`}>+374 (33) 54 34 55, </p>
                         </Link>
                         <Link href='tel:010543455' aria-label='(010) 54 34 55' className={styles.icon}>
-                            <p className={`${styles.info_web}`}>(010) 54 34 55</p>
+                            <p className={`${styles.info_web} ${ArianAMU.className}`}>(010) 54 34 55</p>
                         </Link>
                     </div>
                     <div>
-                        <h2 className={styles.hosts_title}>{t('texts.follow-us')}</h2>
+                        <h2 className={`${styles.hosts_title} ${ArianAMU.className}`}>{t('texts.follow-us')}</h2>
                         <div className={styles.hosts}>
                             <Link href={Hosts.facebook} aria-label='Facebook' className={styles.icon} target="_blank">
                                 <Facebook width='40' height='40' fill='white' />
-                            </Link>
-                            <Link href={Hosts.twitter} aria-label='Twitter' className={styles.icon} target="_blank">
-                                <Twitter width='40' height='40' fill='white' />
                             </Link>
                             <Link href={Hosts.gmail} aria-label='Gmail' className={styles.icon} target="_blank">
                                 <Gmail width='40' height='40' fill='white' />
@@ -74,7 +72,7 @@ const Footer = () => {
                     <div className={styles.logo_footer}>
                         <LogoFooter width='274' height='75' fill='white' />
                     </div>
-                    <p className={styles.reserved}>{`©️ ${currentYear}  ${t('texts.rights')}`}</p>
+                    <p className={`${styles.reserved} ${ArianAMU.className}`}>{`©️ ${currentYear}  ${t('texts.rights')}`}</p>
                 </div>
             </div>
         </footer>
