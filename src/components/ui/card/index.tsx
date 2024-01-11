@@ -2,13 +2,19 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import { urlFor } from '../../../../sanity/sanity';
-
 import ArianAMU from '@/constants/font';
 
 import styles from './style.module.sass';
 
+interface BranchWebProps {
+    item: {
+        web_site_title: string;
+        web_site_url: string;
+        website_logo: string;
+    };
+}
 
-const BranchWeb = ({ item }: any) => {
+const BranchWeb: React.FC<BranchWebProps> = ({ item }) => {
     const { web_site_title, web_site_url, website_logo } = item;
 
     const urlForImage = urlFor(website_logo)
@@ -17,7 +23,7 @@ const BranchWeb = ({ item }: any) => {
         .url();
 
     return (
-        <Link href={web_site_url} aria-label={`${web_site_url}`} target="_blank">
+        <Link href={web_site_url} aria-label={`${web_site_url}`} target="_blank" id='card'>
             <div className={styles.card_container}>
                 <div className={styles.card}>
                     <div className={styles.front}>
@@ -42,3 +48,4 @@ const BranchWeb = ({ item }: any) => {
 };
 
 export default BranchWeb;
+
