@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, memo } from 'react';
 import Head from 'next/head';
 
 import Layout from '@/components/layout/Layout';
@@ -19,7 +19,7 @@ const Home: FC<HomeProps> = ({ data }) => {
 		<Layout headerPosition='fixed'>
 			<Head>
 				<title>ART House Holding</title>
-				<meta name='description' content='Training Center' />
+				<meta name='description' content='ART House Holding' />
 			</Head>
 			<MainScreen />
 			<Branches data={data} />
@@ -29,4 +29,4 @@ const Home: FC<HomeProps> = ({ data }) => {
 	);
 };
 
-export default Home;
+export default memo(Home);
