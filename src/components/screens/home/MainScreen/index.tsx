@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 
 import Container from '@/components/components//container/Container';
 
-import ArianAMU from '@/constants/font';
+import { inter } from '@/constants/font';
 
 import styles from './style.module.sass';
 
@@ -37,7 +37,7 @@ const MainScreen = () => {
                             sizes="100vw"
                             style={{ objectFit: 'cover' }}
                         />
-                        <p className={`${styles.text} ${ArianAMU.className}`}>{t('texts.main-title')}</p>
+                        <p className={`${styles.text} ${inter.className}`}>{t('texts.main-title')}</p>
                     </div>
                     <div className={styles.flash_light_column}>
                         <Image

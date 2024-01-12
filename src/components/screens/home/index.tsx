@@ -18,8 +18,8 @@ const Home: FC<HomeProps> = ({ data }) => {
 	return (
 		<Layout headerPosition='fixed'>
 			<Head>
-				<title>ART House Holding</title>
-				<meta name='description' content='ART House Holding' />
+				<title>Art House Holding</title>
+				<meta name='description' content='Art House Holding' />
 			</Head>
 			<MainScreen />
 			<Branches data={data} />

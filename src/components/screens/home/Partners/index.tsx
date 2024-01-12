@@ -11,7 +11,7 @@ import useWindowSize from '@/hooks/useWindowSize';
 
 import { HomeContent } from '../../../../../sanity/sanity-queries/home-queries';
 
-import ArianAMU from '@/constants/font';
+import { inter } from '@/constants/font';
 
 // Swiper styles
 import 'swiper/css';
@@ -26,7 +26,7 @@ type Props = {
 
 const Partners: FC<Props> = ({ data }) => {
     const { t } = useTranslation();
-    const size = useWindowSize();    
+    const size = useWindowSize();
 
     const items = data.co_workers.map((item: any) =>
         <SwiperSlide key={item._key}>
@@ -36,7 +36,7 @@ const Partners: FC<Props> = ({ data }) => {
 
     return (
         <div id="co-workers" className={styles.container}>
-            <h2 className={`${styles.title} ${ArianAMU.className}`}>{t('section-titles.partners')}</h2>
+            <h2 className={`${styles.title} ${inter.className}`}>{t('section-titles.partners')}</h2>
             <div className={styles.desktop}>
                 <Swiper
                     slidesPerView={size.width <= 991 ? 4 : 9}

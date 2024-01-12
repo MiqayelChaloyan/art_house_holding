@@ -7,11 +7,11 @@ import Link from 'next/link';
 import { openModalLoading } from '@/store/stateLoadingLanguage';
 import { useAppDispatch } from '@/hooks/useStore';
 
-import cn from 'classnames';
-
 import Logo from '@/components/icons/Logo';
 
-import ArianAMU from '@/constants/font';
+import { ArianAMU } from '@/constants/font';
+
+import cn from 'classnames';
 
 import styles from './Header.module.sass';
 

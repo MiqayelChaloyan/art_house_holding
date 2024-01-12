@@ -9,7 +9,7 @@ import { getHomeData } from '../../sanity/services/home.service';
 type HomePageProps = {
   data: HomeContent
   isError: boolean
-}
+};
 
 const HomePage: FC<HomePageProps> = ({ data, isError }) => {
 
