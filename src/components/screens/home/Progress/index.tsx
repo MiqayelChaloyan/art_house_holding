@@ -5,7 +5,7 @@ import ProgressBar from '../../../ui/progressBar';
 
 import { HomeContent } from '../../../../../sanity/sanity-queries/home-queries';
 
-import ArianAMU from '@/constants/font';
+import { inter } from '@/constants/font';
 
 import styles from './style.module.sass';
 
@@ -19,7 +19,7 @@ const Progress: FC<Props> = ({ data }) => {
     const items = uploadProgress.map((item: any) => (
         <div key={item.slug} className={styles.column}>
             <ProgressBar value={0} quantity={item.quantity} />
-            <p className={`${styles.title} ${ArianAMU.className}`}>{item.title}</p>
+            <p className={`${styles.title} ${inter.className}`}>{item.title}</p>
         </div>
     ));
 

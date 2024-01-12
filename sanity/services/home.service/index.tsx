@@ -6,8 +6,10 @@ export const getHomeData = async (language: string): Promise<HomeContent[]> => {
     const query = groq`*[_type == "home"] {
         "_id": _id,
         "our_websites": our_websites[] {
-            "web_site_title": web_site_title[$language],
-            "website_logo": website_logo,
+            "company_name": company_name,
+            "words": words[$language],
+            "website_logo_front": website_logo_front,
+            "website_logo_back": website_logo_back,
             "slug": slug.current,
             "web_site_url": web_site_url
         },

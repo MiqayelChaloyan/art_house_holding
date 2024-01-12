@@ -10,15 +10,19 @@ const home_content = {
             name: 'our_websites',
             type: 'array',
             title: 'Websites',
-            // description: 'Դուք կարող եք ավելացնել ցանկացած թվով նկարներ, առնվազն երկու հատ',
             of: [
                 {
                     name: 'object',
                     type: 'object',
                     fields: [
                         {
+                            title: 'Company Name (Ընկերության Անվանումը)',
+                            name: 'company_name',
+                            type: 'string'
+                        },
+                        {
                             title: 'Website Title',
-                            name: 'web_site_title',
+                            name: 'words',
                             type: 'object',
                             validation: (Rule: any) => Rule.required(),
                             fields: [
@@ -40,8 +44,21 @@ const home_content = {
                             ]
                         },
                         {
-                            title: 'Website Logo',
-                            name: 'website_logo',
+                            title: 'Website Logo Front',
+                            name: 'website_logo_front',
+                            type: 'image',
+                            options: { hotspot: true },
+                            fields: [
+                                {
+                                    name: 'alt',
+                                    title: 'Alt',
+                                    type: 'string'
+                                }
+                            ]
+                        },
+                        {
+                            title: 'Website Logo Back',
+                            name: 'website_logo_back',
                             type: 'image',
                             options: { hotspot: true },
                             fields: [
@@ -165,4 +182,3 @@ const home_content = {
 };
 
 export default home_content;
-
