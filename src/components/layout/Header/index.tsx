@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
+import { Link as ScrollLink } from 'react-scroll';
+
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 
@@ -86,11 +88,10 @@ const Header = ({ typePosition }: IHeaderProps) => {
                     `${isOpenMenu ? styles.contentShow : ''}`,
                 )}>
                     <div className={styles.nav}>
-                        <Link href='#about' aria-label='about' className={`${styles.link} ${linkActive === 'about' ? styles.linkActive : ''} ${ArianAMU.className}`} onClick={() => handleActiveLink('about')}>{t('navigation.about')}</Link>
-                        <Link href='#branches' aria-label='branches' className={`${styles.link} ${linkActive === 'branches' ? styles.linkActive : ''} ${ArianAMU.className}`} onClick={() => handleActiveLink('branches')}>{t('navigation.branches')}</Link>
-                        <Link href='#co-workers' aria-label='co_workers' className={`${styles.link} ${linkActive === 'co-workers' ? styles.linkActive : ''} ${ArianAMU.className}`} onClick={() => handleActiveLink('co-workers')}>{t('navigation.co-workers')}</Link>
+                        <ScrollLink to="about" smooth={true} duration={500} className={`${styles.link} ${linkActive === 'about' ? styles.linkActive : ''} ${ArianAMU.className}`} onClick={() => handleActiveLink('about')}>{t('navigation.about')}</ScrollLink>
+                        <ScrollLink to="branches" smooth={true} duration={500} className={`${styles.link} ${linkActive === 'branches' ? styles.linkActive : ''} ${ArianAMU.className}`} onClick={() => handleActiveLink('branches')}>{t('navigation.branches')}</ScrollLink>
+                        <ScrollLink to="co-workers" smooth={true} duration={500} className={`${styles.link} ${linkActive === 'co-workers' ? styles.linkActive : ''} ${ArianAMU.className}`} onClick={() => handleActiveLink('co-workers')}>{t('navigation.co-workers')}</ScrollLink>
                     </div>
-
                     <div>
                         {otherLocales.map((locale: any, localeIndex: number) => {
                             const { pathname, query } = router;
