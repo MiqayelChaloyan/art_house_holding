@@ -66,7 +66,10 @@ const Header = ({ typePosition }: IHeaderProps) => {
         setIsOpenMenu(!isOpenMenu);
     };
 
-    const handleActiveLink = (activeLink: string) => setLinkActive(activeLink);
+    const handleActiveLink = (activeLink: string) => {
+        setLinkActive(activeLink);
+        setIsOpenMenu(false);
+    };
 
     return (
         <header className={cn(
