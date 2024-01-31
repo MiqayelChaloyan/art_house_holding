@@ -45,7 +45,6 @@
         width: 50px
     @media screen and ( max-width: 767px )
         width: 69px
-        padding-top: 34px
 
 .title_front
     text-align: center
@@ -99,6 +98,8 @@
     &:hover 
         .card
             transform: rotateY( 180deg )
+            @media screen and ( max-width: 767px )
+                transform: rotateY( 0deg )
 
 .front
 .back 
