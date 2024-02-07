@@ -12,7 +12,7 @@ const home_content = {
             title: 'Websites',
             of: [
                 {
-                    name: 'object',
+                    name: 'Object',
                     type: 'object',
                     fields: [
                         {
