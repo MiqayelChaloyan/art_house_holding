@@ -32,6 +32,7 @@ const nextConfig = {
     defaultLocale: 'am',
     locales: ['am', 'ru', 'en'],
   },
+  distDir: 'next/build',
 }
 
 module.exports = nextConfig
