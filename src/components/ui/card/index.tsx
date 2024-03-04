@@ -37,7 +37,7 @@ const BranchWeb: React.FC<BranchWebProps> = ({ item }) => {
     const titlesBack = wordsArray.map((word: string, index: number) => <p key={index} className={`${styles.title_back} ${inter.className}`} >{word}</p>);
 
     return (
-        <Link href={web_site_url} aria-label={`${web_site_url}`} target="_blank" id='card'>
+        <Link href={`/${web_site_url}`} aria-label={`${web_site_url}`} id='card'>
             <div className={styles.card_container}>
                 <div className={styles.card}>
                     <div className={styles.front}>
